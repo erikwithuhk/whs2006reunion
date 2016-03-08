@@ -52,7 +52,7 @@ h6 { font-size: 0.75em; }
 Forms
 ======================= */
 
-input {
+input, select {
 	margin-bottom: 2em;
 }
 
@@ -79,6 +79,7 @@ label {
 	background-color: #feb729;
 	border: 1px solid #c38700;
 	font-size: 1em;
+	margin-top: 1em;
 	-webkit-transition: background-color 0.2s ease-in-out;
 	-moz-transition: background-color 0.2s ease-in-out;
 	-o-transition: background-color 0.2s ease-in-out;
