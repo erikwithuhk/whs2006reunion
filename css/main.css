@@ -134,6 +134,10 @@ footer {
 	width: 100%;
 }
 
+footer .group {
+	margin-top: 1em;
+}
+
 #contact_text {
 	margin: 0 5%;
 	text-align: center;
