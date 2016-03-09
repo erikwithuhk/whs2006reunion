@@ -117,25 +117,46 @@ footer {
 	padding: 1em 0;
 }
 
-footer img {
-	display: inline-block;
-	height: 2em;
-	width: 2em;
-	margin-right: 0.5em;
+footer div {
+	width: 100%;
 }
+
+#contact_text {
+	text-align: left;
+}
+
+#social_links {
+	text-align:center;
+}
+
+#social_links img {
+	height: 4em;
+	width: 4em;
+	margin-right: 1em;
+}
+
+#social_links ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#social_links li {
+	display: inline-block;
+}
+
 
 @media screen and (min-width: 480px) {
 	#contact_text {
 		float: left;
-		padding: 0 5%;
-		width: 45%;
+		padding: 0 5em;
+		max-width: 40em;
 	}
 
 	#social_links {
 		float: right;
-		padding: 0 5%;
-		text-align: right;
-		width: 45%;
+		padding: 0 5em;
+		max-width: 26em;
 	}
 }
 
