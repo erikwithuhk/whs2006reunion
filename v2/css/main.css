@@ -45,6 +45,9 @@ nav,
   border: 2px solid #feb729;
   border-radius: 0;
   color: #feb729;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 .btn-default:active,
@@ -71,7 +74,11 @@ Header
 ======================= */
 
 .navbar-nav {
-  margin-top: 40px;
+  margin-top: 45px;
+}
+
+.navbar-nav .selected {
+  border-bottom: 5px solid #feb729;
 }
 
 
