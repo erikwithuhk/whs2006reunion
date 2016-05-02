@@ -64,6 +64,9 @@
           <li>
             <a href="tickets.html">Buy tickets</a>
           </li>
+          <li>
+            <a href="donate.html">Donate</a>
+          </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -131,34 +134,42 @@
   <!-- Header Carousel -->
   <header id="myCarousel" class="carousel slide">
     <!-- Indicators -->
-    <!-- <ol class="carousel-indicators">
+    <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol> -->
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
+        <div class="fill" style="background-image:url('images/map.jpg');"></div>
+        <div class="carousel-caption">
+          <h2>June 25, 2016<br>Meadowbrook Lodge</h2>
+        </div>
+      </div>
+      <div class="item">
         <div class="fill" style="background-image:url('images/ticket_window.jpg');"></div>
         <div class="carousel-caption">
           <h2>Reunion tickets are now on sale!</h2>
         </div>
       </div>
-      <!-- <div class="item">
+      <div class="item">
         <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
         <div class="carousel-caption">
           <h2>Survey results</h2>
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!-- Controls -->
-    <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="icon-prev"></span>
     </a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">
       <span class="icon-next"></span>
-    </a> -->
+    </a>
   </header>
 
   <!-- Page Content -->
@@ -240,7 +251,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-default btn-block" href="#">Buy tickets</a>
+          <a class="btn btn-lg btn-default btn-block" href="tickets.html">Buy tickets</a>
         </div>
       </div>
     </div>
@@ -275,11 +286,11 @@
   <script src="js/bootstrap.js"></script>
 
   <!-- Script to Activate the Carousel -->
-  <!-- <script>
+  <script>
   $('.carousel').carousel({
     interval: 5000 //changes the speed
   })
-  </script> -->
+  </script>
 
   <!-- Google Analytics -->
   <!-- <script>
