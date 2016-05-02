@@ -6,6 +6,13 @@
 
 /* Global Styles */
 
+/* clearfix */
+.group:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
 html,
 body {
     font-family: 'Lora', serif;
@@ -13,7 +20,7 @@ body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 h1,
@@ -21,9 +28,21 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+nav,
+.btn {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+}
+
+.btn-default {
+  background-color: #feb729;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background-color: #feb729;
+  color: #fff;
 }
 
 .img-portfolio {
@@ -32,6 +51,12 @@ h6 {
 
 .img-hover:hover {
     opacity: 0.8;
+}
+
+/*header*/
+
+.navbar-nav {
+  margin-top: 40px;
 }
 
 /* Home Page Carousel */
@@ -78,10 +103,61 @@ header.carousel .fill {
     font-style: italic;
 }
 
-/* Footer Styles */
+
+/* =======================
+Footer
+======================= */
 
 footer {
-    margin: 50px 0;
+	background-color: #001737;
+  color: #fff;
+	font-size: 0.8571em;
+	overflow: auto;
+	padding: 1em 0;
+  width: 100%;
+}
+
+footer a, footer a:hover {
+  color: #feb279;
+}
+
+footer .group {
+	margin-top: 1em;
+}
+
+#contact_text {
+	margin: 0 5%;
+	text-align: center;
+}
+
+#social_links {
+	margin: 2em auto;
+	text-align:center;
+}
+
+#social_links img {
+	height: 4em;
+	width: 4em;
+	margin-right: 1em;
+}
+
+#social_links ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#social_links li {
+	display: inline-block;
+}
+
+#copyright {
+	margin-top: 2em;
+	text-align: center;
+}
+
+#copyright p, #copyright a, #copyright a:visited {
+		color: #a8b1b8;
 }
 
 /* Responsive Styles */
@@ -91,6 +167,23 @@ footer {
     .img-related {
         margin-bottom: 30px;
     }
+}
+
+@media screen and (min-width: 787px) {
+  #contact_text {
+    float: left;
+    margin: 0;
+    padding: 0 5em;
+    text-align: left;
+    max-width: 40em;
+  }
+
+  #social_links {
+    float: right;
+    margin: 0;
+    padding: 0 5em;
+    max-width: 26em;
+  }
 }
 
 @media(max-width:767px) {
