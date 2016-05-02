@@ -250,7 +250,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <p>The reunion is only ## days away! All your friends will be there, etc. Buy your tickets now to make sure you don't miss out.</p>
+          <p>The reunion is only <span class="daysTill" id="reunion"> </span> days away! All your friends will be there, etc. Buy your tickets now to make sure you don't miss out.</p>
         </div>
         <div class="col-md-4">
           <a class="btn btn-lg btn-default btn-block" href="tickets.html">Buy tickets</a>
@@ -291,6 +291,48 @@
   $('.carousel').carousel({
     interval: 5000 //changes the speed
   })
+  </script>
+
+  <!-- Countdown -->
+  <script>
+  window.onload = showDays;
+
+  function showDays() {
+    var allTags = document.getElementsByTagName("*");
+
+    for (var i=0;i<allTags.length; i++) {
+      if (allTags[i].className.indexOf("daysTill") > -1) {
+        allTags[i].innerHTML = showTheDaysTill(allTags[i].id);
+      }
+    }
+
+    function showTheDaysTill(thisDate) {
+      var theDays;
+
+      switch(thisDate) {
+        case "reunion":
+        theDays = daysTill(6,25);
+        break;
+        default:
+      }
+      return theDays + " ";
+    }
+
+    function daysTill(mm,dd) {
+      var now = new Date();
+      var inDate = new Date(now.getFullYear(),mm-1,dd);
+
+      if (inDate.getTime() < now.getTime()) {
+        inDate.setYear(now.getFullYear()+1);
+      }
+
+      return (Math.ceil(dayToDays(inDate) - dayToDays(now)));
+    }
+
+    function dayToDays(inTime) {
+      return (inTime.getTime() / (1000 * 60 * 60 * 24));
+    }
+  }
   </script>
 
   <!-- Google Analytics -->
