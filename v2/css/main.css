@@ -194,4 +194,9 @@ footer .group {
     header.carousel .carousel {
         height: 70%;
     }
+
+    .navbar-nav {
+      margin-top: 0px;
+      text-align: right;
+    }
 }
