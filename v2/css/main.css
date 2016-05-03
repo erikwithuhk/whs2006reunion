@@ -121,10 +121,10 @@ Navigation
 ======================= */
 
 .navbar-nav {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
-.navbar-nav a.selected {
+.navbar-nav li.selected {
   border-bottom: 5px solid #feb729;
 }
 
