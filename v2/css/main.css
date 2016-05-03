@@ -70,14 +70,14 @@ nav,
 
 
 /* =======================
-Header
+Navigation
 ======================= */
 
 .navbar-nav {
   margin-top: 45px;
 }
 
-.navbar-nav .selected {
+.navbar-nav a.selected {
   border-bottom: 5px solid #feb729;
 }
 
@@ -238,11 +238,16 @@ footer .group {
     }
 
     header.carousel .carousel {
-        height: 70%;
+      height: 70%;
     }
 
     .navbar-nav {
       margin-top: 0px;
       text-align: right;
+    }
+
+    .btn-default {
+      background-color: #feb729;
+      color: #fff;
     }
 }
