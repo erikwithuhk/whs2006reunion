@@ -246,6 +246,10 @@ footer .group {
       text-align: right;
     }
 
+    .navbar-nav a.selected {
+      border-bottom: none;
+    }
+
     .btn-default {
       background-color: #feb729;
       color: #fff;
