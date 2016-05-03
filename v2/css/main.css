@@ -10,12 +10,9 @@
  Global Styles
  ======================= */
 
-/* clearfix */
-.group:after {
- content: "";
- display: table;
- clear: both;
-}
+ * {
+ 	margin: 0;
+ }
 
 html,
 body {
@@ -40,6 +37,14 @@ nav,
   text-transform: uppercase;
 }
 
+.breadcrumb a,
+.breadcrumb a,
+.breadcrumb a,
+.breadcrumb a
+  {
+    color: #feb729;
+  }
+
 .btn-default {
   background-color: #fff;
   border: 2px solid #feb729;
@@ -59,12 +64,54 @@ nav,
   color: #fff;
 }
 
+/* clearfix */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .img-portfolio {
     margin-bottom: 30px;
 }
 
 .img-hover:hover {
     opacity: 0.8;
+}
+
+
+
+/* =======================
+Forms
+======================= */
+
+input, select {
+  margin-bottom: 2em;
+}
+
+.form-control {
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+}
+
+label {
+  color: #00275e;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.asterisk {
+  color: #feb729;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #c38700;
+}
+
+.indicates-required {
+  font-size: 0.75em;
+  margin-top: 3em;
+  text-align: right;
 }
 
 
@@ -131,44 +178,19 @@ RSVP-Signup
 	text-align: center;
 }
 
-
-
-/* =======================
-Forms
-======================= */
-
 #mc_embed_signup {
   max-width: 400px;
   margin: 1em auto 3em;
 }
 
-input, select {
-	margin-bottom: 2em;
-}
 
-.form-control {
-  border-radius: 1px;
-  -webkit-border-radius: 1px;
-}
 
-label {
-	color: #00275e;
-	font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-}
+/* =======================
+Contact
+======================= */
 
-.asterisk {
-	color: #feb729;
-}
-
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-	background-color: #c38700;
-}
-
-.indicates-required {
-	font-size: 0.75em;
-	margin-top: 3em;
-	text-align: right;
+#contactForm {
+  margin: 1em 0 5em;
 }
 
 
@@ -206,9 +228,19 @@ label {
 Footer
 ======================= */
 
-footer {
+.wrapper {
+ min-height: 100%;
+ height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+ height: 100%;
+ margin: 0 auto -156px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+}
+
+footer, .push {
 	background-color: #001737;
   color: #fff;
+  height: 156px; /* .push must be the same height as .footer */
 	padding: 1em 0;
   width: 100%;
 }
@@ -259,7 +291,11 @@ footer .group {
 		color: #a8b1b8;
 }
 
-/* Responsive Styles */
+
+
+/* =======================
+Responsive Styles
+======================= */
 
 @media(max-width:991px) {
     .customer-img,
