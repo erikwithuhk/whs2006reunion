@@ -43,7 +43,7 @@ nav,
 .btn-default {
   background-color: #fff;
   border: 2px solid #feb729;
-  border-radius: 0;
+  border-radius: 1px;
   color: #feb729;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -111,13 +111,64 @@ CTA
 ======================= */
 
 .well {
-  /*background-color: #fff;*/
-  /*border: none;*/
-  /*box-shadow: none;*/
   margin-bottom: 0;
   border-radius: none;
   -moz-border-radius: none;
   -webkit-border-radius: none;
+}
+
+
+
+/* =======================
+RSVP-Signup
+======================= */
+
+#rsvp_signup {
+  margin-top: 50px;
+}
+
+#rsvp_signup p {
+	text-align: center;
+}
+
+
+
+/* =======================
+Forms
+======================= */
+
+#mc_embed_signup {
+  max-width: 400px;
+  margin: 1em auto 3em;
+}
+
+input, select {
+	margin-bottom: 2em;
+}
+
+.form-control {
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+}
+
+label {
+	color: #00275e;
+	font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.asterisk {
+	color: #feb729;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background-color: #c38700;
+}
+
+.indicates-required {
+	font-size: 0.75em;
+	margin-top: 3em;
+	text-align: right;
 }
 
 

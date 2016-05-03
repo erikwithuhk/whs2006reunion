@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800,300|Lora:400,400italic,700,700italic" type="text/css">
-	<link rel="stylesheet" href="css/main.css" type="text/css">
 
-	<meta property="og:title" content="WHS '06 Reunion"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://whs2006reunion.com/"/>
-	<meta property="og:image" content="http://whs2006reunion.com/images/logo_og_1200sq.png"/>
-	<meta property="og:site_name" content="WHS '06 Reunion"/>
-	<meta property="fb:admins" content="erikwithuhk"/>
-	<meta property="og:description"
-	content="Let us know if you're planning on coming to the reunion, and sign up to receive email updates about the Washingtonville Class of 2006 Reunion."/>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta property="og:title" content="WHS '06 Reunion"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://whs2006reunion.com/"/>
+  <meta property="og:image" content="http://whs2006reunion.com/images/logo_og_1200sq.png"/>
+  <meta property="og:site_name" content="WHS '06 Reunion"/>
+  <meta property="fb:admins" content="erikwithuhk"/>
+  <meta property="og:description"
+  content="Let us know if you're planning on coming to the reunion, and sign up to receive email updates about the Washingtonville Class of 2006 Reunion."/>
+
+  <title>WHS '06 Reunion</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800,300|Lora:400,400italic,700,700italic" type="text/css">
+
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
 </head>
 
 <body>
-	<div class="container-fluid">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"/></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="tickets.html">Buy tickets</a>
+          </li>
+          <li>
+            <a href="news.html">News</a>
+          </li>
+          <!-- <li>
+            <a href="whos-coming.html">Who's coming</a>
+          </li> -->
+          <li>
+            <a href="rsvp-signup.html">RSVP &amp; signup</a>
+          </li>
+          <li>
+            <a href="donate.html">Donate</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-2 col-md-3"></div>
-			<div class="col-sm-8 col-md-6" id="homepage_content">
-				<img src="images/logo.png" alt="Washingtonville High School Class of 2006 Reunion">
-				<ul id="event_details">
-					<li>June 25, 2016</li>
-					<li>Meadowbrook Lodge</li>
-					<li>New Windsor, NY</li>
-				</ul>
-				<p>We've got a date, we've got a venue, now we just need you!</p>
+			<div class="col-sm-8 col-md-6" id="rsvp_signup">
 				<p>Let us know if you're planning on coming to the reunion, and sign up to receive email updates about the Washingtonville Class&nbsp;of&nbsp;2006 Reunion.</p>
+				<p>To change your RSVP or subscription status, fill out the form with your information, and you'll be directed to a page where you can update both.</p>
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
 					<form action="//whs2006reunion.us11.list-manage.com/subscribe/post?u=6beb7774a3f1b1edc7eeb4af1&amp;id=4bbe19fab6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" role="form" target="_blank" novalidate>
@@ -38,22 +97,22 @@
 							<div class="form-group mc-field-group">
 								<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
 								</label><br>
-								<input type="text" value="" name="FNAME" class="form-control required" id="mce-FNAME">
+								<input type="text" value="" name="FNAME" class="form-control required" id="mce-FNAME" required>
 							</div>
 							<div class="form-group mc-field-group">
 								<label for="mce-LNAME">Last (and Maiden) Name  <span class="asterisk">*</span>
 								</label><br>
-								<input type="text" value="" name="LNAME" class="form-control required" id="mce-LNAME">
+								<input type="text" value="" name="LNAME" class="form-control required" id="mce-LNAME" required>
 							</div>
 							<div class="form-group mc-field-group">
 								<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 								</label><br>
-								<input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
+								<input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" required>
 							</div>
 							<div class="form-group mc-field-group">
 								<label for="mce-COMING">Are you coming to the reunion?  <span class="asterisk">*</span>
 								</label>
-								<select name="COMING" class="required form-control" id="mce-COMING">
+								<select name="COMING" class="required form-control" id="mce-COMING" required>
 									<option value="Yes, definitely!">Yes, definitely!</option>
 									<option value="Yes, with a guest">Yes, with a guest</option>
 									<option value="Not sure yet">Not sure yet</option>
@@ -64,7 +123,7 @@
 							<div class="form-group mc-field-group">
 								<label for="mce-UPDATES">Do you want to sign up for email updates?  <span class="asterisk">*</span>
 								</label>
-								<select name="UPDATES" class="required form-control" id="mce-UPDATES">
+								<select name="UPDATES" class="required form-control" id="mce-UPDATES" required>
 									<option value="Yes">Yes</option>
 									<option value="No">No</option>
 								</select>
@@ -74,7 +133,7 @@
 								<div class="response" id="mce-success-response" style="display:none"></div>
 							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6beb7774a3f1b1edc7eeb4af1_4bbe19fab6" tabindex="-1" value=""></div>
-							<div class="clear"><input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class="btn btn-primary button"></div>
+							<div class="clear"><input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class="btn btn-default button"></div>
 						</div>
 					</form>
 				</div>
