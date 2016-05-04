@@ -167,6 +167,28 @@ CTA
 
 
 /* =======================
+News
+======================= */
+
+.post-description h3 a,
+.post-description h3 a:visited,
+.post-description p a,
+.post-description p a:visited {
+  color: #00275e;
+}
+
+.post-description h3 a:active,
+.post-description h3 a:focus,
+.post-description h3 a:hover,
+.post-description p a:active,
+.post-description p a:focus,
+.post-description p a:hover {
+  color: #feb729;
+}
+
+
+
+/* =======================
 RSVP-Signup
 ======================= */
 
@@ -234,13 +256,14 @@ Footer
  height: 100%;
  margin: 0 auto -156px; /* the bottom margin is the negative value of the footer's height */
 }
-.footer, .push {
+
+footer, .push {
+  min-height: 156px; /* .push must be the same height as .footer */
 }
 
 footer, .push {
 	background-color: #001737;
   color: #fff;
-  height: 156px; /* .push must be the same height as .footer */
 	padding: 1em 0;
   width: 100%;
 }
