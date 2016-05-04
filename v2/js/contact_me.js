@@ -14,7 +14,6 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
-            var phone = $("input#phone").val();
             var email = $("input#email").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
@@ -27,7 +26,6 @@ $(function() {
                 type: "POST",
                 data: {
                     name: name,
-                    phone: phone,
                     email: email,
                     message: message
                 },
@@ -50,7 +48,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " it seems that my mail server is not responding...</strong> Could you please email me directly at <a href='mailto:washingtonvilleclassof2006@gmail.com'>washingtonvilleclassof2006@gmail.com</a>? Sorry for the inconvenience!");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " it seems that my mail server is not responding...</strong> Could you please email us directly at <a href='mailto:washingtonvilleclassof2006@gmail.com'>washingtonvilleclassof2006@gmail.com</a>? Sorry for the inconvenience!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
