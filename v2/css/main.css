@@ -289,6 +289,10 @@ footer a:hover {
   color: #feb729;
 }
 
+footer p {
+  font-size: 14px;
+}
+
 footer .group {
 	margin-top: 1em;
 }
@@ -346,7 +350,7 @@ Responsive Styles
     float: left;
     margin: 0;
     text-align: left;
-    max-width: 40em;
+    max-width: 30em;
   }
 
   #social_links {
