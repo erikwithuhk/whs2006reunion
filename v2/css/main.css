@@ -261,7 +261,7 @@ footer, .push {
   min-height: 156px; /* .push must be the same height as .footer */
 }
 
-footer, .push {
+footer {
 	background-color: #001737;
   color: #fff;
 	padding: 1em 0;
