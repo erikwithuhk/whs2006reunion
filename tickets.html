@@ -15,9 +15,9 @@
   <meta property="og:site_name" content="WHS '06 Reunion"/>
   <meta property="fb:admins" content="erikwithuhk"/>
   <meta property="og:description"
-  content="Let us know if you're planning on coming to the reunion, and sign up to receive email updates about the Washingtonville Class of 2006 Reunion."/>
+  content="Buy tickets for the WHS '06 Reunion."/>
 
-  <title>WHS '06 Reunion</title>
+  <title>Buy tickets | WHS '06 Reunion</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -58,7 +58,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li>
+          <li class="selected">
             <a href="tickets.html">Buy tickets</a>
           </li>
           <!-- <li>
@@ -83,88 +83,30 @@
     <!-- /.container -->
   </nav>
 
-  <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <!-- <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol> -->
-
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="fill" style="background-image:url('images/class_duotone.jpg');"></div>
-        <div class="carousel-caption">
-          <!-- <h2>June 25, 2016<br>Meadowbrook Lodge</h2> -->
-        </div>
-      </div>
-      <!-- <div class="item">
-        <div class="fill" style="background-image:url('images/ticket_window_duotone_true.jpg');"></div>
-        <div class="carousel-caption">
-          <h2>Reunion tickets are now on sale!</h2>
-        </div>
-      </div>
-      <div class="item">
-        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-        <div class="carousel-caption">
-          <h2>Survey results</h2>
-        </div>
-      </div> -->
-    </div>
-
-    <!-- Controls -->
-    <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="icon-next"></span>
-    </a> -->
-  </header>
-
   <!-- Page Content -->
-  <div class="wrapper">
   <div class="container">
 
-    <!-- Features Section -->
-    <div class="row" style="margin-bottom:3em;">
-      <div class="col-lg-12">
-        <h2 class="page-header">Tickets are on sale</h2>
-      </div>
-      <div class="col-md-6">
-        <p>The time is here!</p>
-        <p>The reunion committee has been hard at work the past couple of months&#8212;calling and visiting venues, discussing food, drinks, and decorations.</p>
-        <p>We announced that the reunion would be on June 25 at the Meadowbrook Lodge, and many of you let us know that you're planning to be there.</p>
-        <p>Tickets for the reunion will be $100, and will include a full dinner buffet, dessert, and open bar.</p>
-        <p><a href="tickets.html">Buy your ticket now</a>, and check back on our website for news &amp; updates about the reunion (or <a href="rsvp-signup.html">sign up for our email list</a>).</p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive" src="images/ticket_window_700x450.jpg" alt="">
-      </div>
-    </div>
-    <!-- /.row -->
-  </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h1 class="page-header">Buy tickets
+        </h1>
 
-  <!-- Call to Action Section -->
-  <div class="well">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <p>We hope that you're as excited as we are about our 10-year reunion.</p>
-          <p>If you're planning on coming, there are only <span class="daysTill" id="reunion"> </span> days left to buy your tickets, so get them now!</p>
+        <!-- Eventbrite widget  -->
+
+        <div style="width:100%; text-align:left;" >
+          <iframe  src="https://www.eventbrite.com/e/whs-06-reunion-tickets-20970113173?ref=eweb" frameborder="0" height="1500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true" frameborder="0"></iframe>
+
+          <div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" >
+            <a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/r/eweb">Powered by Eventbrite</a>
+          </div>
         </div>
-        <div id="cta_button" class="col-md-4">
-          <a class="btn btn-lg btn-default btn-block" href="tickets.html">Buy tickets</a>
-        </div>
+        <div class="col-md-2"></div>
       </div>
     </div>
+
   </div>
   <!-- /.container -->
-  <div class="push"></div>
-</div>
-
 
   <!-- Footer -->
   <footer>
@@ -191,55 +133,6 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.js"></script>
 
-  <!-- Script to Activate the Carousel -->
-  <!-- <script>
-  $('.carousel').carousel({
-    interval: 5000 //changes the speed
-  })
-  </script> -->
-
-  <!-- Countdown -->
-  <script>
-  window.onload = showDays;
-
-  function showDays() {
-    var allTags = document.getElementsByTagName("*");
-
-    for (var i=0;i<allTags.length; i++) {
-      if (allTags[i].className.indexOf("daysTill") > -1) {
-        allTags[i].innerHTML = showTheDaysTill(allTags[i].id);
-      }
-    }
-
-    function showTheDaysTill(thisDate) {
-      var theDays;
-
-      switch(thisDate) {
-        case "reunion":
-        theDays = daysTill(6,12);
-        break;
-        default:
-      }
-      return theDays + " ";
-    }
-
-    function daysTill(mm,dd) {
-      var now = new Date();
-      var inDate = new Date(now.getFullYear(),mm-1,dd);
-
-      if (inDate.getTime() < now.getTime()) {
-        inDate.setYear(now.getFullYear()+1);
-      }
-
-      return (Math.ceil(dayToDays(inDate) - dayToDays(now)));
-    }
-
-    function dayToDays(inTime) {
-      return (inTime.getTime() / (1000 * 60 * 60 * 24));
-    }
-  }
-  </script>
-
   <!-- Google Analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -252,6 +145,6 @@
 
   </script>
 
-</body>
+  </body>
 
-</html>
+  </html>

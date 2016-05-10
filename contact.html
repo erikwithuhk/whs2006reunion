@@ -15,9 +15,9 @@
   <meta property="og:site_name" content="WHS '06 Reunion"/>
   <meta property="fb:admins" content="erikwithuhk"/>
   <meta property="og:description"
-  content="Let us know if you're planning on coming to the reunion, and sign up to receive email updates about the Washingtonville Class of 2006 Reunion."/>
+  content="Contact the WHS '06 Reunion committee."/>
 
-  <title>WHS '06 Reunion</title>
+  <title>Contact | WHS '06 Reunion</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -64,16 +64,13 @@
           <!-- <li>
             <a href="news.html">News</a>
           </li> -->
-          <!-- <li>
-            <a href="whos-coming.html">Who's coming</a>
-          </li> -->
           <li>
             <a href="rsvp-signup.html">RSVP &amp; signup</a>
           </li>
           <li>
             <a href="donate.html">Donate</a>
           </li>
-          <li>
+          <li class="selected">
             <a href="contact.html">Contact</a>
           </li>
         </ul>
@@ -83,87 +80,70 @@
     <!-- /.container -->
   </nav>
 
-  <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <!-- <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol> -->
-
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="fill" style="background-image:url('images/class_duotone.jpg');"></div>
-        <div class="carousel-caption">
-          <!-- <h2>June 25, 2016<br>Meadowbrook Lodge</h2> -->
-        </div>
-      </div>
-      <!-- <div class="item">
-        <div class="fill" style="background-image:url('images/ticket_window_duotone_true.jpg');"></div>
-        <div class="carousel-caption">
-          <h2>Reunion tickets are now on sale!</h2>
-        </div>
-      </div>
-      <div class="item">
-        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-        <div class="carousel-caption">
-          <h2>Survey results</h2>
-        </div>
-      </div> -->
-    </div>
-
-    <!-- Controls -->
-    <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="icon-next"></span>
-    </a> -->
-  </header>
-
   <!-- Page Content -->
   <div class="wrapper">
-  <div class="container">
-
-    <!-- Features Section -->
-    <div class="row" style="margin-bottom:3em;">
-      <div class="col-lg-12">
-        <h2 class="page-header">Tickets are on sale</h2>
-      </div>
-      <div class="col-md-6">
-        <p>The time is here!</p>
-        <p>The reunion committee has been hard at work the past couple of months&#8212;calling and visiting venues, discussing food, drinks, and decorations.</p>
-        <p>We announced that the reunion would be on June 25 at the Meadowbrook Lodge, and many of you let us know that you're planning to be there.</p>
-        <p>Tickets for the reunion will be $100, and will include a full dinner buffet, dessert, and open bar.</p>
-        <p><a href="tickets.html">Buy your ticket now</a>, and check back on our website for news &amp; updates about the reunion (or <a href="rsvp-signup.html">sign up for our email list</a>).</p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive" src="images/ticket_window_700x450.jpg" alt="">
-      </div>
-    </div>
-    <!-- /.row -->
-  </div>
-
-  <!-- Call to Action Section -->
-  <div class="well">
     <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
       <div class="row">
+        <div class="col-md-2"></div>
         <div class="col-md-8">
-          <p>We hope that you're as excited as we are about our 10-year reunion.</p>
-          <p>If you're planning on coming, there are only <span class="daysTill" id="reunion"> </span> days left to buy your tickets, so get them now!</p>
+          <h1 class="page-header">Contact
+            <small>the reunion committee</small>
+          </h1>
+
+      <!-- Contact Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+          <form name="sentMessage" id="contactForm" method="post" action="bin/contact_me.php" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="First Last" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email Address:</label>
+                <input type="email" class="form-control" id="email" placeholder="john@example.com" required data-validation-required-message="Please enter your email address.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Message:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" placeholder="Type your message here&hellip;" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-default">Send Message</button>
+          </form>
         </div>
-        <div id="cta_button" class="col-md-4">
-          <a class="btn btn-lg btn-default btn-block" href="tickets.html">Buy tickets</a>
+        <div class="col-md-2"></div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- Call to Action Section -->
+    <div class="well">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>We hope that you're as excited as we are about our 10-year reunion.</p>
+            <p>If you're planning on coming, there are only <span class="daysTill" id="reunion"> </span> days left to buy your tickets, so get them now!</p>
+          </div>
+          <div class="col-md-4" id="cta_button">
+            <a class="btn btn-lg btn-default btn-block" href="tickets.html">Buy tickets</a>
+          </div>
         </div>
       </div>
     </div>
+    <!-- /.container -->
+
+    <div class="push"></div>
   </div>
-  <!-- /.container -->
-  <div class="push"></div>
-</div>
+  <!-- /.Page Content -->
 
 
   <!-- Footer -->
@@ -191,12 +171,10 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.js"></script>
 
-  <!-- Script to Activate the Carousel -->
-  <!-- <script>
-  $('.carousel').carousel({
-    interval: 5000 //changes the speed
-  })
-  </script> -->
+  <!-- Contact Form JavaScript -->
+  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
 
   <!-- Countdown -->
   <script>
@@ -243,14 +221,14 @@
   <!-- Google Analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-73611916-1', 'auto');
-  ga('send', 'pageview');
+ga('create', 'UA-73611916-1', 'auto');
+ga('send', 'pageview');
 
-  </script>
+</script>
 
 </body>
 
